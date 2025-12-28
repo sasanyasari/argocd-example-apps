@@ -27,7 +27,7 @@ spec:
         repoURL: {{ $config.spec.source.repoURL }}
         targetRevision: {{ $config.spec.source.targetRevision }}
         {{- with .tool }}
-        {{- . | toYaml | nindent 4 }}
+        {{- . | toYaml | nindent 8 }}
         {{- end }}
       destination:
         server: {{ $config.spec.destination.server | quote }}
