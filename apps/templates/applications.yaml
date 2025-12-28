@@ -31,6 +31,6 @@ spec:
         {{- end }}
       destination:
         server: {{ $config.spec.destination.server | quote }}
-        namespace: {{ .name | quote }}
+        namespace: {{ .namespace | default .name | quote }}
 ---
 {{ end -}}
