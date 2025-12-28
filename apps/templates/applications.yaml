@@ -19,7 +19,7 @@ spec:
         url: https://2.4.6.8
   template:
     metadata:
-      name: {{.cluster}}-{{ printf "example.%s" .name }}
+      name: '{{.cluster}}-{{.name}}'
     spec:
       project: default
       source:
