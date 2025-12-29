@@ -19,7 +19,7 @@ spec:
           values: [hwb-bare, neda-bare]
   template:
     metadata:
-      name: '{{ "{{.cluster}}" }}-{{ .name }}'
+      name: '{{ .name }}'
     spec:
       project: default
       source:
