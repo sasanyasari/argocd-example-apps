@@ -16,7 +16,7 @@ spec:
         matchExpressions:
         - key: cluster
           operator: In
-          values: [hwb-bare, neda-bare]
+          values: [cluster-1, cluster-2]
   template:
     metadata:
       name: '{{ "{{.name}}" }}-{{ .name }}'
